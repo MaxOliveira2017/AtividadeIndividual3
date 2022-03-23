@@ -1,0 +1,53 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Views\ClienteCadastroe\**" />
+    <Content Remove="Views\ClienteCadastroe\**" />
+    <EmbeddedResource Remove="Views\ClienteCadastroe\**" />
+    <None Remove="Views\ClienteCadastroe\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\ClienteCadastroeController.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Views\ClienteCadastro\Imagens.css" />
+    <None Remove="Views\Home\Assets\LogoStarBucks.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Views\ClienteCadastro\Imagens.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\burrice\Assets\icons8-instagram.svg" />
+    <None Include="wwwroot\css\burrice\Assets\Logotipo-embarque-valente-design-e-publicidade.webp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.13" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.13">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.13" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.13">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\css\test\" />
+  </ItemGroup>
+
+</Project>

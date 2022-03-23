@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - AtvidadeModuloTres</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/burrice/css/style.css" />
+
+</head>
+<body>
+    <STYLE TYPE="text/css">
+            BODY {
+                background-image: url('/css/burrice/Assets/annie-spratt-qyAka7W5uMY-unsplash.jpg');
+            }
+        </STYLE>
+        <header>
+            <div class="center">
+                <div class="logo"><img src="~/css/burrice/Assets/Logo_transparencia.png" /></div><!--Logo-->
+                <div class="menu">
+                    <nav class="navbar navbar-light">
+                         <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                         <a class="nav-link text-dark" href="#">Promoções</a>
+                         <a class="nav-link text-dark" asp-area="" asp-controller="ClienteReserva" asp-action="Index">Cliente Reserva</a>
+                         <a class="nav-link text-dark" asp-area="" asp-controller="ClienteCadastro" asp-action="Index">Cliente Cadastro</a>
+                    </nav>
+                </div><!--menu-->
+            </div><!--center-->
+        </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2022 - Viaje+ - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

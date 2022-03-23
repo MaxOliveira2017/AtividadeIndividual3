@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtvidadeModuloTres", "AtvidadeModuloTres.csproj", "{C50B02AD-CD34-4847-AF0A-AF5307F6869F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C50B02AD-CD34-4847-AF0A-AF5307F6869F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C50B02AD-CD34-4847-AF0A-AF5307F6869F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C50B02AD-CD34-4847-AF0A-AF5307F6869F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C50B02AD-CD34-4847-AF0A-AF5307F6869F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {49E0BCB9-3F8C-4AAF-A273-E25A008E223B}
+	EndGlobalSection
+EndGlobal
